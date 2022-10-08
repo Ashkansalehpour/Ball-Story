@@ -1,0 +1,287 @@
+/* 
+  Title: Ball Story
+
+  Version:1.0 v
+
+  Developer: Ashkan Salehpour
+
+  Date:10/08/2022
+
+  Description: Html/css of movement circle shape , which works with animations .
+  You can also using position instead of animations.
+*/
+
+
+@keyframes changes{
+    5%{
+        transform: translate(300px,0px);
+        width: 50px;
+        height: 50px;
+    }
+    7%{
+        width: 50px;
+        height: 60px;
+    }
+
+    10%{
+        transform: translate(300px,430px);
+        width: 50px;
+        height: 20px;
+        transition-timing-function: ease-out;
+    }
+    15%{
+        width: 50px;
+        height: 55px;
+        
+    }
+    18%{
+        width: 50px;
+        height: 60px;
+    }
+    19%{
+        width: 50px;
+        height: 60px;
+    }
+    20%{
+        transform: translate(370px,0px);
+        width: 50px;
+        height: 50px;
+        transition-timing-function: ease-in-out;
+    }
+    /* STEP2 */
+    21%{
+        width: 50px;
+        height: 50px;
+    }
+    23%{
+        width: 50px;
+        height: 60px;
+    }
+    25%{
+        transform: translate(390px,430px);
+        width: 50px;
+        height: 20px;
+        transition-timing-function: ease-out;
+    }
+    27%{
+        width: 50px;
+        height: 55px;
+        
+    }
+    28%{
+        width: 50px;
+        height: 60px;
+    }
+    29%{
+        width: 50px;
+        height: 60px;
+    }
+    30%{
+        transform: translate(430px,100px);
+        width: 50px;
+        height: 50px;
+        transition-timing-function: ease-in-out;
+    }
+    /* STEP 3 */
+    31%{
+        width: 50px;
+        height: 50px;
+    }
+    33%{
+        width: 50px;
+        height: 50px;
+    }
+    35%{
+        transform: translate(450px,430px);
+        width: 50px;
+        height: 20px;
+        transition-timing-function: ease-out;
+    }
+    37%{
+        width: 50px;
+        height: 55px;
+        
+    }
+    38%{
+        width: 50px;
+        height: 60px;
+    }
+    39%{
+        width: 50px;
+        height: 60px;
+    }
+    40%{
+        transform: translate(470px,270px);
+        width: 50px;
+        height: 50px;
+        transition-timing-function: ease-in-out;
+    } 
+    /* STEP 4 */
+    41%{
+        width: 50px;
+        height: 50px;
+    }
+    43%{
+        width: 50px;
+        height: 60px;
+    }
+    45%{
+        transform: translate(500px,400px);
+        width: 50px;
+        height: 50px;
+        transition-timing-function: ease-out;
+    }
+    47%{
+        width: 50px;
+        height: 50px;
+        
+    }
+    48%{
+        width: 50px;
+        height: 53px;
+    }
+    49%{
+        width: 50px;
+        height: 60px;
+    }
+    50%{
+        transform: translate(520px,330px);
+        width: 50px;
+        height: 50px;
+        transition-timing-function: ease-in-out;
+    } 
+    /* Step 5 */
+    51%{
+        width: 50px;
+        height: 50px;
+    }
+    53%{
+        width: 50px;
+        height: 60px;
+    }
+    55%{
+        transform: translate(550px,400px);
+        width: 50px;
+        height: 50px;
+        transition-timing-function: ease-out;
+    }
+    57%{
+        width: 50px;
+        height: 55px;
+        
+    }
+    58%{
+        width: 50px;
+        height: 50px;
+    }
+    59%{
+        width: 50px;
+        height: 50px;
+    }
+    60%{
+        transform: translate(570px,360px);
+        width: 50px;
+        height: 50px;
+        transition-timing-function: ease-in-out;
+    } 
+    /* STEP 6 */
+    61%{
+        width: 50px;
+        height: 50px;
+    }
+    63%{
+        width: 50px;
+        height: 55px;
+    }
+    65%{
+        transform: translate(600px,400px);
+        width: 50px;
+        height: 45px;
+        transition-timing-function: ease-out;
+    }
+    67%{
+        width: 50px;
+        height: 52px;
+        
+    }
+    68%{
+        width: 50px;
+        height: 50px;
+    }
+    69%{
+        width: 50px;
+        height: 50px;
+    }
+    70%{
+        transform: translate(620px,390px);
+        width: 50px;
+        height: 50px;
+        transition-timing-function: ease-in-out;
+    } 
+    /* STEP 7 */
+    71%{
+        width: 50px;
+        height: 50px;
+    }
+    73%{
+        width: 50px;
+        height: 50px;
+    }
+    75%{
+        transform: translate(650px,400px);
+        width: 50px;
+        height: 50px;
+        transition-timing-function: ease-out;
+    }
+}
+
+body{
+    background-color: darkcyan;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1000px;
+    height: 700px;
+    background-color: #909090;
+    position: relative;
+}
+
+#shapes{
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    border-radius: 50%; 
+    position: absolute;
+    top:50px;
+    left:50px;
+
+
+}
+
+#shapes:active{
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-name: changes;
+    transition: all .5s;
+
+}
+
+#line{
+    width: 330px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+
+
+#line2{
+    width: 1000px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    bottom: 197px;
+    left: 0px;}
+
