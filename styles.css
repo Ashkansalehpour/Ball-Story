@@ -260,7 +260,7 @@ body{
 }
 
 #shapes:active{
-    animation-duration: 7s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-name: changes;
     transition: all .5s;
